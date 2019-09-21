@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CARRINHO</title>
+    <style>
+        table {
+            font-family: cursive, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(18, 18, 19);
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(164, 110, 197, 0.514);
+        }
+    </style>
+
+
+    <script>
+        function Adicionar() {
+            alert("RELATÓRIO DA COMPRA  \n\n 1. TABLITO – Preço unitário: R$3,00 \n QUANTIDADE: 10 \n Valor: R$ 300,00 \n\n  2. CORNETTO preço unitário: R$7,00 \nQUANTIDADE: 150 \n Valor: R$1050,00 \n\n TOTAL R$ 1.350,00");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <a href="index.html">Voltar</a>
+    </div>
+
+    <div>
+        <div class="pagina">
+            <div>
+                <center>
+                    <h1><i>Produtos para comprar</i></h1>
+                </center>
+
+            </div>
+            <br><br>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Sorvete</th>
+                    <th>Marca</th>
+                    <th>Unidade</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Preço Total</th>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Buscar ID"></td>
+                    <td>TABLITO</td>
+                    <td>KIBON</td>
+                    <td>84g</td>
+                    <td><input type="number"placeholder="100 unidades"></td>
+                    <td>R$ 3,00</td>
+                    <td>R$ 300,00</td>
+                </tr>
+
+                <tr>
+
+                    <td><input type="text" placeholder="Buscar ID"></td>
+                    <td>CORNETTO</td>
+                    <td>KIBON</td>
+                    <td>72g
+                    <td><input type="number" placeholder="150 unidades"></td>
+                    <td>R$ 7,00</td>
+                    <td>R$ 1.050</td>
+                </tr>
+
+            </table>
+            <br>
+            <div class="btn-group">
+                <table>
+                    <th> <button onclick="Adicionar()" class="button">COMPRAR</button></th>
+                    <th><button class="button">LIMPAR CARRINHO</button></th>
+                    <th> <label>Total:</label><input type="text" value="R$ 1.350,00" disabled></th>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
